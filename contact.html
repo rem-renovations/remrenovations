@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — REM Renovations & Repairs LLC</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="REM Renovations Logo" class="logo" />
+        <div class="brand-text">
+          <div class="company">REM Renovations & Repairs LLC</div>
+          <div class="tag">Quality · Integrity · Innovation</div>
+        </div>
+      </a>
+
+      <button id="hamburger" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+        <a class="phone" href="tel:9843193744">(984) 319-3744</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>Contact Us</h1>
+      <p class="lead">Get in touch for quotes, questions, or to schedule a consultation.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info card">
+          <h3>Contact Info</h3>
+          <p><strong>Email</strong>: <a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></p>
+          <p><strong>Phone</strong>: <a href="tel:9843193744">(984) 319-3744</a></p>
+          <p><strong>Hours</strong>: Mon-Sat 8:00 AM - 6:00 PM</p>
+        </div>
+
+        <div class="contact-form card">
+          <h3>Send a Message</h3>
+
+          <!--
+            Formspree setup:
+            1) Sign up at https://formspree.io
+            2) Create a form and you'll get an endpoint like: https://formspree.io/f/mayzgeqa
+            3) Replace the action below with your endpoint URL.
+            4) Formspree will email submissions to the address you configured.
+          -->
+          <form id="contactForm" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID">
+            <label>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Your email" required>
+            </label>
+            <label>
+              <input type="text" name="phone" placeholder="Phone (optional)">
+            </label>
+            <label>
+              <textarea name="message" rows="6" placeholder="How can we help?" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <button type="button" id="mailtoFallback" class="btn btn-outline">Open Email Client</button>
+            </div>
+            <p class="hint">If you prefer, click "Open Email Client" to email: remrenovationsandrepairsllc@gmail.com</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year4"></span> REM Renovations & Repairs LLC</div>
+      <div>remrenovationsandrepairsllc@gmail.com · (984) 319-3744</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Mailto fallback button behavior
+    document.getElementById('mailtoFallback').addEventListener('click', function () {
+      const name = document.querySelector('input[name="name"]').value || '';
+      const email = document.querySelector('input[name="email"]').value || '';
+      const phone = document.querySelector('input[name="phone"]').value || '';
+      const message = document.querySelector('textarea[name="message"]').value || '';
+      const subject = encodeURIComponent('Website Contact Request - REM Renovations');
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:remrenovationsandrepairsllc@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>

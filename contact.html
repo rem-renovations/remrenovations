@@ -4,21 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — REM Renovations & Repairs LLC</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="REM Renovations Logo" class="logo" />
-        <div class="brand-text">
-          <div class="company">REM Renovations & Repairs LLC</div>
-          <div class="tag">Quality · Integrity · Innovation</div>
-        </div>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <svg class="logo" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="g4" x1="0" x2="1"><stop offset="0" stop-color="#0868d1"/><stop offset="1" stop-color="#003f8a"/></linearGradient></defs>
+          <text x="0" y="36" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="36" fill="url(#g4)">REM</text>
+          <text x="78" y="36" font-family="Segoe UI, Roboto, Arial" font-weight="600" font-size="18" fill="#1b2938">Renovations & Repairs</text>
+        </svg>
       </a>
 
-      <button id="hamburger" class="hamburger" aria-label="Open menu">
+      <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
 
@@ -27,74 +26,79 @@
         <a class="nav-link" href="services.html">Services</a>
         <a class="nav-link" href="gallery.html">Gallery</a>
         <a class="nav-link active" href="contact.html">Contact</a>
-        <a class="phone" href="tel:9843193744">(984) 319-3744</a>
+        <a class="phone btn-primary" href="tel:9843193744">(984) 319-3744</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="page">
-      <h1>Contact Us</h1>
-      <p class="lead">Get in touch for quotes, questions, or to schedule a consultation.</p>
+  <main>
+    <section class="wrap page contact-page">
+      <h1>Contact</h1>
+      <p class="lead">Reach out for quotes, consultations, or general questions. We typically respond within one business day.</p>
 
       <div class="contact-grid">
-        <div class="contact-info card">
+        <div class="card contact-info">
           <h3>Contact Info</h3>
           <p><strong>Email</strong>: <a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></p>
           <p><strong>Phone</strong>: <a href="tel:9843193744">(984) 319-3744</a></p>
-          <p><strong>Hours</strong>: Mon-Sat 8:00 AM - 6:00 PM</p>
+          <p><strong>Hours</strong>: Mon–Sat 8:00 AM – 6:00 PM</p>
         </div>
 
-        <div class="contact-form card">
+        <form class="card contact-form" id="contactForm"
+              action="https://formspree.io/f/xblqlwbq"
+              method="POST">
           <h3>Send a Message</h3>
 
-          <!--
-            Formspree setup:
-            1) Sign up at https://formspree.io
-            2) Create a form and you'll get an endpoint like: https://formspree.io/f/mayzgeqa
-            3) Replace the action below with your endpoint URL.
-            4) Formspree will email submissions to the address you configured.
-          -->
-          <form id="contactForm" method="POST" action="https://formspree.io/f/xblqlwbq">
-            <label>
-              <input type="text" name="name" placeholder="Your name" required>
-            </label>
-            <label>
-              <input type="email" name="email" placeholder="Your email" required>
-            </label>
-            <label>
-              <input type="text" name="phone" placeholder="Phone (optional)">
-            </label>
-            <label>
-              <textarea name="message" rows="6" placeholder="How can we help?" required></textarea>
-            </label>
+          <label class="field">
+            <span class="label-text">Name</span>
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
 
-            <div class="form-actions">
-              <button type="submit" class="btn">Send Message</button>
-              <button type="button" id="mailtoFallback" class="btn btn-outline">Open Email Client</button>
-            </div>
-            <p class="hint">If you prefer, click "Open Email Client" to email: remrenovationsandrepairsllc@gmail.com</p>
-          </form>
-        </div>
+          <label class="field">
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required placeholder="Your email">
+          </label>
+
+          <label class="field">
+            <span class="label-text">Phone</span>
+            <input type="text" name="phone" placeholder="Phone (optional)">
+          </label>
+
+          <label class="field">
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="6" required placeholder="How can we help?"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Send Message</button>
+            <button type="button" id="mailtoBtn" class="btn-outline">Open Email Client</button>
+          </div>
+
+          <p class="hint">If you prefer, click <strong>Open Email Client</strong> to send via your mail app.</p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="wrap footer-inner">
       <div>© <span id="year4"></span> REM Renovations & Repairs LLC</div>
-      <div>remrenovationsandrepairsllc@gmail.com · (984) 319-3744</div>
+      <div>
+        <a href="mailto:remrenovationsandrepairsllc@gmail.com" class="muted-link">remrenovationsandrepairsllc@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="tel:9843193744" class="muted-link">(984) 319-3744</a>
+      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
   <script>
-    // Mailto fallback button behavior
-    document.getElementById('mailtoFallback').addEventListener('click', function () {
-      const name = document.querySelector('input[name="name"]').value || '';
-      const email = document.querySelector('input[name="email"]').value || '';
-      const phone = document.querySelector('input[name="phone"]').value || '';
-      const message = document.querySelector('textarea[name="message"]').value || '';
+    // Mailto fallback: open user's email client prefilled
+    document.getElementById('mailtoBtn').addEventListener('click', function () {
+      const name = encodeURIComponent(document.querySelector('input[name="name"]').value || '');
+      const email = encodeURIComponent(document.querySelector('input[name="email"]').value || '');
+      const phone = encodeURIComponent(document.querySelector('input[name="phone"]').value || '');
+      const message = encodeURIComponent(document.querySelector('textarea[name="message"]').value || '');
       const subject = encodeURIComponent('Website Contact Request - REM Renovations');
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
       window.location.href = `mailto:remrenovationsandrepairsllc@gmail.com?subject=${subject}&body=${body}`;

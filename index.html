@@ -1,105 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>REM Renovations & Repairs LLC — Home</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<div style="display:flex; align-items:center;">
-<img src="logo.png" alt="REM Renovations Logo">
-<div>
-<h1 style="font-size:1.2rem; margin:0;">REM Renovations & Repairs LLC</h1>
-<p style="margin:0; color:#888; font-size:0.85rem;">Quality · Integrity · Innovation</p>
-</div>
-</div>
-<div class="hamburger" onclick="toggleMenu()">
-<div class="bar"></div>
-<div class="bar"></div>
-<div class="bar"></div>
-</div>
-<nav id="nav-menu">
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-<a href="tel:9843193744">(984) 319-3744</a>
-</nav>
-</header>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="REM Renovations Logo" class="logo" />
+        <div class="brand-text">
+          <div class="company">REM Renovations & Repairs LLC</div>
+          <div class="tag">Quality · Integrity · Innovation</div>
+        </div>
+      </a>
 
+      <button id="hamburger" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
 
-<main>
-<section id="home">
-<h2>We Transform Visions into Reality</h2>
-<p>
-At REM Renovations & Repairs LLC, we are dedicated to transforming people's vision of a dream into a reality.
-We create innovative, inspiring spaces that combine quality craftsmanship with thoughtful design.
-From small repairs to full remodels — we bring your dream to life.
-</p>
-<ul>
-<li>Licensed professionals focused on quality and safety</li>
-<li>Timely projects with transparent pricing</li>
-<li>Customer-first approach with clear communication</li>
-</ul>
-</section>
+      <nav id="main-nav" class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="phone" href="tel:9843193744">(984) 319-3744</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>We transform visions into reality</h1>
+        <p class="lead">
+          At REM Renovations & Repairs LLC, we are dedicated to transforming people's vision of a dream into a reality.
+          We create innovative, inspiring spaces that combine quality craftsmanship with thoughtful design.
+          From small repairs to full remodels — we bring your dream to life.
+        </p>
 
-<section id="services">
-<h2>Our Services</h2>
-<div class="service-grid">
-<div class="service-card">Bathroom Remodel</div>
-<div class="service-card">Kitchen Remodel</div>
-<div class="service-card">Deck Construction & Repair</div>
-<div class="service-card">Fence Construction & Repair</div>
-<div class="service-card">Insulation</div>
-<div class="service-card">Moisture Barrier</div>
-<div class="service-card">Concrete Slab</div>
-<div class="service-card">Concrete Deck & Walkways</div>
-<div class="service-card">Electrical</div>
-<div class="service-card">Plumbing</div>
-<div class="service-card">Tile</div>
-<div class="service-card">Pressure Washing</div>
-<div class="service-card">Mold Remediation</div>
-<div class="service-card">Crawl Space Encapsulation</div>
-<div class="service-card">Paint</div>
-<div class="service-card">Sheet Rock</div>
-<div class="service-card">Sub-Floor Repair/Re-level</div>
-<div class="service-card">Plus More - One Call Does It All</div>
-</div>
-</section>
+        <ul class="bullets">
+          <li>Licensed professionals focused on quality and safety</li>
+          <li>Timely projects with transparent pricing</li>
+          <li>Customer-first approach: communication at every step</li>
+        </ul>
 
+        <div class="actions">
+          <a class="btn" href="contact.html">Request a Quote</a>
+          <a class="btn btn-outline" href="gallery.html">View Projects</a>
+        </div>
+      </div>
 
-<section id="gallery">
-<h2>Project Gallery</h2>
-<div class="gallery">
-<img src="https://via.placeholder.com/400x250?text=Project+1" alt="Gallery image">
-<img src="https://via.placeholder.com/400x250?text=Project+2" alt="Gallery image">
-<img src="https://via.placeholder.com/400x250?text=Project+3" alt="Gallery image">
-<img src="https://via.placeholder.com/400x250?text=Project+4" alt="Gallery image">
-</div>
-</section>
+      <aside class="hero-right">
+        <div class="card">
+          <h3>Featured Work</h3>
+          <div class="grid-preview">
+            <img src="https://via.placeholder.com/400x250?text=Project+1" alt="">
+            <img src="https://via.placeholder.com/400x250?text=Project+2" alt="">
+            <img src="https://via.placeholder.com/400x250?text=Project+3" alt="">
+            <img src="https://via.placeholder.com/400x250?text=Project+4" alt="">
+          </div>
+        </div>
+      </aside>
+    </section>
 
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is simple: dedication to transforming people's vision of a dream into reality, and creating innovative,
+        inspiring spaces that stand the test of time. We focus on quality, value, and communication to deliver results you’ll
+        be proud of.
+      </p>
+    </section>
+  </main>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:remrenovationsandrepairsllc@gmail.com" style="color:#4da6ff;">remrenovationsandrepairsllc@gmail.com</a></p>
-<p>Phone: <a href="tel:9843193744" style="color:#4da6ff;">(984) 319-3744</a></p>
-<form action="https://formspree.io/f/mayzgeqa" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<input type="text" name="phone" placeholder="Your Phone">
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
-</main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> REM Renovations & Repairs LLC</div>
+      <div>remrenovationsandrepairsllc@gmail.com · (984) 319-3744</div>
+    </div>
+  </footer>
 
-
-<footer>
-© 2025 REM Renovations & Repairs LLC · remrenovationsandrepairsllc@gmail.com · (984) 319-3744
-</footer>
-
-
-<script>
-function toggleMenu() {
-document.getElementById('nav-menu').classList.toggle('show');
-}
-</script>
+  <script src="script.js"></script>
 </body>
 </html>

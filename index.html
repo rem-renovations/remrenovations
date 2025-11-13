@@ -4,21 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>REM Renovations & Repairs LLC — Home</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>REM</text></svg>">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="REM Renovations Logo" class="logo" />
-        <div class="brand-text">
-          <div class="company">REM Renovations & Repairs LLC</div>
-          <div class="tag">Quality · Integrity · Innovation</div>
-        </div>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="REM Renovations and Repairs Home">
+        <!-- Simple SVG wordmark (replace later if you upload a logo) -->
+        <svg class="logo" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0868d1"/><stop offset="1" stop-color="#003f8a"/></linearGradient></defs>
+          <rect width="200" height="50" fill="transparent"/>
+          <text x="0" y="36" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="36" fill="url(#g)">REM</text>
+          <text x="78" y="36" font-family="Segoe UI, Roboto, Arial" font-weight="600" font-size="18" fill="#1b2938">Renovations & Repairs</text>
+        </svg>
       </a>
 
-      <button id="hamburger" class="hamburger" aria-label="Open menu">
+      <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
 
@@ -27,63 +30,53 @@
         <a class="nav-link" href="services.html">Services</a>
         <a class="nav-link" href="gallery.html">Gallery</a>
         <a class="nav-link" href="contact.html">Contact</a>
-        <a class="phone" href="tel:9843193744">(984) 319-3744</a>
+        <a class="phone btn-primary" href="tel:9843193744">(984) 319-3744</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-left">
-        <h1>We transform visions into reality</h1>
-        <p class="lead">
-          At REM Renovations & Repairs LLC, we are dedicated to transforming people's vision of a dream into a reality.
-          We create innovative, inspiring spaces that combine quality craftsmanship with thoughtful design.
-          From small repairs to full remodels — we bring your dream to life.
-        </p>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-content">
+        <h1>We create refined spaces built to last</h1>
+        <p class="lead">At REM Renovations & Repairs LLC we combine meticulous craftsmanship with modern design to transform your vision into an inspired, functional reality. From full remodels to targeted repairs — we deliver quality, transparency, and consistency.</p>
 
-        <ul class="bullets">
-          <li>Licensed professionals focused on quality and safety</li>
-          <li>Timely projects with transparent pricing</li>
-          <li>Customer-first approach: communication at every step</li>
-        </ul>
-
-        <div class="actions">
-          <a class="btn" href="contact.html">Request a Quote</a>
-          <a class="btn btn-outline" href="gallery.html">View Projects</a>
+        <div class="cta-row">
+          <a href="contact.html" class="btn-primary large">Request a Quote</a>
+          <a href="services.html" class="btn-outline large">View Services</a>
         </div>
+
+        <ul class="features">
+          <li><strong>Licensed professionals</strong> — safety & code compliant</li>
+          <li><strong>Transparent pricing</strong> — no surprises</li>
+          <li><strong>Client-first</strong> — communication at every step</li>
+        </ul>
       </div>
 
-      <aside class="hero-right">
-        <div class="card">
-          <h3>Featured Work</h3>
-          <div class="grid-preview">
-            <img src="https://via.placeholder.com/400x250?text=Project+1" alt="">
-            <img src="https://via.placeholder.com/400x250?text=Project+2" alt="">
-            <img src="https://via.placeholder.com/400x250?text=Project+3" alt="">
-            <img src="https://via.placeholder.com/400x250?text=Project+4" alt="">
-          </div>
-        </div>
-      </aside>
+      <figure class="hero-image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c6e?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b0e2b9ff49f2b45c06b2c8bd93b6d1b" alt="High-end renovation interior">
+        <figcaption class="sr-only">High-end renovated interior</figcaption>
+      </figure>
     </section>
 
-    <section class="mission">
-      <h2>Our Mission</h2>
-      <p>
-        Our mission is simple: dedication to transforming people's vision of a dream into reality, and creating innovative,
-        inspiring spaces that stand the test of time. We focus on quality, value, and communication to deliver results you’ll
-        be proud of.
-      </p>
+    <section class="wrap quick-intro">
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p>Dedicated to transforming people's visions of a dream into reality by creating innovative, inspiring spaces that blend timeless design with exceptional workmanship.</p>
+      </div>
+
+      <div class="card">
+        <h3>Why REM</h3>
+        <ol>
+          <li>Quality-first craftsmanship</li>
+          <li>On-time project management</li>
+          <li>Clear estimates & communication</li>
+        </ol>
+      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> REM Renovations & Repairs LLC</div>
-      <div>remrenovationsandrepairsllc@gmail.com · (984) 319-3744</div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <section class="wrap showcase">
+      <h2>Featured Projects</h2>
+      <div class="showcase-grid">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f7f80b2ccd5c2c30f6b8c6f5bc6a5c1" alt="Kitchen remodel">
+        <img src="https://images.unsplash.com/photo-1600585154350-3d0f2d6e4c0b?q=

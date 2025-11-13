@@ -1,112 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services — REM Renovations & Repairs LLC</title>
+  <title>Services — REM Renovations & Repairs</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="Home">
-        <svg class="logo" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#0868d1"/><stop offset="1" stop-color="#003f8a"/></linearGradient></defs>
-          <text x="0" y="36" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="36" fill="url(#g2)">REM</text>
-          <text x="78" y="36" font-family="Segoe UI, Roboto, Arial" font-weight="600" font-size="18" fill="#1b2938">Renovations & Repairs</text>
-        </svg>
-      </a>
-
-      <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav id="main-nav" class="nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="services.html">Services</a>
-        <a class="nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        <a class="phone btn-primary" href="tel:9843193744">(984) 319-3744</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="wrap page">
-      <h1>Services</h1>
-      <p class="lead">Comprehensive renovation and repair solutions — one call handles it all.</p>
-
-      <div class="service-list">
-        <article class="service">
-          <h3>Bathroom Remodel</h3>
-          <p>Design-forward bathroom renovations focusing on durability and clean finishes.</p>
-        </article>
-
-        <article class="service">
-          <h3>Kitchen Remodel</h3>
-          <p>Modern kitchens with optimized layouts, high-quality cabinetry and finishes.</p>
-        </article>
-
-        <article class="service">
-          <h3>Deck Construction & Repair</h3>
-          <p>Built to last outdoor living spaces with pressure-treated or composite options.</p>
-        </article>
-
-        <article class="service">
-          <h3>Fence Construction & Repair</h3>
-          <p>Functional and attractive fencing tailored to your property's style and needs.</p>
-        </article>
-
-        <article class="service">
-          <h3>Insulation & Moisture Barrier</h3>
-          <p>Improve comfort and efficiency with professional insulation and moisture control.</p>
-        </article>
-
-        <article class="service">
-          <h3>Concrete — Slabs, Decks & Walkways</h3>
-          <p>Durable concrete solutions for foundations, patios, and walkways.</p>
-        </article>
-
-        <article class="service">
-          <h3>Electrical & Plumbing</h3>
-          <p>Licensed trades to ensure safe, code-compliant installations and repairs.</p>
-        </article>
-
-        <article class="service">
-          <h3>Tile, Painting & Sheetrock</h3>
-          <p>Detail-focused finishing work for a refined final result.</p>
-        </article>
-
-        <article class="service">
-          <h3>Mold Remediation & Crawl Space Encapsulation</h3>
-          <p>Holistic moisture and mold solutions to protect your home’s structure.</p>
-        </article>
-
-        <article class="service">
-          <h3>Sub-Floor Repair / Re-level</h3>
-          <p>Structural repair and leveling to restore stable, safe floors.</p>
-        </article>
-
-        <article class="service">
-          <h3>Pressure Washing & More</h3>
-          <p>Exterior cleaning and maintenance to keep your property looking its best.</p>
-        </article>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo">REM Renovations & Repairs</div>
+      <div id="mobile-menu" class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container main">
+    <header class="page-header">
+      <h1>Our Services</h1>
+      <p class="lead">High-quality renovation, repair, and construction services tailored to your needs.</p>
+    </header>
+
+    <section class="services-grid grid">
+      <article class="service card big">
+        <h3>Full Remodels</h3>
+        <p>End-to-end remodeling from design planning to final walk-through. Kitchens, bathrooms, entire homes.</p>
+        <ul>
+          <li>Design & build</li>
+          <li>Permit coordination</li>
+          <li>Project management</li>
+        </ul>
+      </article>
+
+      <article class="service card">
+        <h3>Kitchen Renovation</h3>
+        <p>Cabinetry, counters, plumbing fixtures, lighting, and finishes for modern or classic styles.</p>
+      </article>
+
+      <article class="service card">
+        <h3>Bathroom Renovation</h3>
+        <p>Waterproofing, tile, shower systems, vanities, and ADA-compliant upgrades if needed.</p>
+      </article>
+
+      <article class="service card">
+        <h3>Decks & Fences</h3>
+        <p>Custom designs, pressure-treated or composite decking, privacy and decorative fences.</p>
+      </article>
+
+      <article class="service card">
+        <h3>Concrete & Masonry</h3>
+        <p>Driveways, walkways, foundations, and repair work with long-lasting finishes.</p>
+      </article>
+
+      <article class="service card">
+        <h3>General Repairs</h3>
+        <p>Emergency repairs, carpentry, drywall, painting, and small-scale maintenance tasks.</p>
+      </article>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div>© <span id="year2"></span> REM Renovations & Repairs LLC</div>
-      <div>
-        <a href="mailto:remrenovationsandrepairsllc@gmail.com" class="muted-link">remrenovationsandrepairsllc@gmail.com</a>
-        <span class="sep">·</span>
-        <a href="tel:9843193744" class="muted-link">(984) 319-3744</a>
-      </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year2"></span> REM Renovations and Repairs • All Rights Reserved</div>
+      <div><a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

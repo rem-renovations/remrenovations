@@ -7,70 +7,84 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="logo">REM Renovations & Repairs</div>
-      <div id="mobile-menu" class="menu-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">REM Renovations</div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <main class="container main">
-    <header class="page-header">
-      <h1>Our Services</h1>
-      <p class="lead">High-quality renovation, repair, and construction services tailored to your needs.</p>
-    </header>
+  <main>
+    <section class="page-hero section-light">
+      <div class="container">
+        <h1 class="page-title">OUR SERVICES</h1>
+        <p class="section-lead">Comprehensive renovation and repair solutions tailored to your needs</p>
+      </div>
+    </section>
 
-    <section class="services-grid grid">
-      <article class="service card big">
-        <h3>Full Remodels</h3>
-        <p>End-to-end remodeling from design planning to final walk-through. Kitchens, bathrooms, entire homes.</p>
-        <ul>
-          <li>Design & build</li>
-          <li>Permit coordination</li>
-          <li>Project management</li>
-        </ul>
-      </article>
+    <section class="services-list container">
+      <div class="service-row">
+        <div class="service-thumb"><img src="images/service-kitchen.jpg" alt="Kitchen remodel" class="rounded-img"></div>
+        <div class="service-body">
+          <h3>Kitchen Remodeling</h3>
+          <p class="muted">Custom cabinetry, countertops, lighting, and layout planning for modern functional kitchens.</p>
+          <ul class="service-points muted">
+            <li>Design & build</li>
+            <li>Cabinetry & countertops</li>
+            <li>Lighting & fixtures</li>
+          </ul>
+        </div>
+      </div>
 
-      <article class="service card">
-        <h3>Kitchen Renovation</h3>
-        <p>Cabinetry, counters, plumbing fixtures, lighting, and finishes for modern or classic styles.</p>
-      </article>
+      <div class="service-row reverse">
+        <div class="service-thumb"><img src="images/service-bath.jpg" alt="Bathroom" class="rounded-img"></div>
+        <div class="service-body">
+          <h3>Bathroom Renovation</h3>
+          <p class="muted">Elegant fixtures, expert tile work, and waterproofing to create spa-like bathrooms.</p>
+          <ul class="service-points muted">
+            <li>Full tile & shower systems</li>
+            <li>Vanities & fixtures</li>
+            <li>Accessibility upgrades</li>
+          </ul>
+        </div>
+      </div>
 
-      <article class="service card">
-        <h3>Bathroom Renovation</h3>
-        <p>Waterproofing, tile, shower systems, vanities, and ADA-compliant upgrades if needed.</p>
-      </article>
-
-      <article class="service card">
-        <h3>Decks & Fences</h3>
-        <p>Custom designs, pressure-treated or composite decking, privacy and decorative fences.</p>
-      </article>
-
-      <article class="service card">
-        <h3>Concrete & Masonry</h3>
-        <p>Driveways, walkways, foundations, and repair work with long-lasting finishes.</p>
-      </article>
-
-      <article class="service card">
-        <h3>General Repairs</h3>
-        <p>Emergency repairs, carpentry, drywall, painting, and small-scale maintenance tasks.</p>
-      </article>
+      <div class="service-row">
+        <div class="service-thumb"><img src="images/service-deck.jpg" alt="Deck" class="rounded-img"></div>
+        <div class="service-body">
+          <h3>Decks & Exterior</h3>
+          <p class="muted">Durable, attractive outdoor spaces that increase livable area and curb appeal.</p>
+          <ul class="service-points muted">
+            <li>Composite & wood decks</li>
+            <li>Fences & privacy solutions</li>
+            <li>Siding & exterior repairs</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year2"></span> REM Renovations and Repairs • All Rights Reserved</div>
-      <div><a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></div>
+  <footer class="site-footer section-light">
+    <div class="container footer-grid">
+      <div>
+        <h4>REM Renovations</h4>
+        <p class="muted small">High-quality renovations and repairs with a focus on customer satisfaction.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted small">remrenovationsandrepairsllc@gmail.com</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p class="muted small">Kitchens • Bathrooms • Decks • Concrete • Repairs</p>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year2"></span> REM Renovations & Repairs • All rights reserved</div>
   </footer>
 
 <script src="script.js"></script>

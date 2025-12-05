@@ -8,86 +8,101 @@
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3659/3659784.png" type="image/png">
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="logo">REM Renovations & Repairs</div>
-      <div id="mobile-menu" class="menu-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1>Building Quality. Delivering Trust.</h1>
-        <p class="lead">Elegant renovations and dependable repairs — precision, professionalism, and a finishing touch that lasts.</p>
-        <div class="hero-cta">
-          <a class="btn" href="contact.html">Request a Quote</a>
-          <a class="btn ghost" href="gallery.html">View Projects</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" alt="Luxury renovation project">
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">REM Renovations</div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container main">
-    <section class="about-card card">
-      <h2>About REM</h2>
-      <p>REM Renovations & Repairs specializes in high-end residential and commercial renovations — kitchens, bathrooms, decks, fences, concrete, and more. We combine careful planning, top-tier materials, and skilled craftsmanship to deliver results you can trust.</p>
-      <div class="mission">
-        <h3>Our Mission</h3>
-        <p>To transform homes and businesses with honesty, safety, and premium workmanship — one project at a time.</p>
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1 class="hero-title">QUALITY RENOVATIONS<br>FOR YOUR DREAM SPACE</h1>
+        <p class="hero-sub">Transform your home with expert craftsmanship and attention to detail. From kitchens to complete home makeovers, we bring your vision to life.</p>
+        <a href="gallery.html" class="btn-outline">View Our Work</a>
+      </div>
+      <div class="hero-right">
+        <img src="images/hero-kitchen.jpg" alt="Luxury kitchen" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="services-preview section-light">
+      <div class="container">
+        <h2 class="section-title">OUR SERVICES</h2>
+        <p class="section-lead">Comprehensive renovation and repair solutions tailored to your needs</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">🏠</div>
+            <h3>Kitchen Remodeling</h3>
+            <p class="muted">Create the kitchen of your dreams with custom cabinetry, modern appliances, and layouts designed for your lifestyle.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🛠️</div>
+            <h3>Bathroom Renovation</h3>
+            <p class="muted">Transform your bathroom into a spa-like retreat with elegant fixtures, quality materials, and expert installation.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🌳</div>
+            <h3>Exterior & Decks</h3>
+            <p class="muted">Enhance curb appeal with professional siding, roofing, decks, fencing, and outdoor living spaces.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="services-preview grid">
-      <article class="service card">
-        <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?auto=format&fit=crop&w=800&q=70" alt="Kitchen remodel">
-        <h4>Kitchen Remodels</h4>
-        <p>Modern designs, durable finishes, and efficient layouts for the heart of your home.</p>
-      </article>
-
-      <article class="service card">
-        <img src="https://images.unsplash.com/photo-1509099836639-18ba6d3f9b5a?auto=format&fit=crop&w=800&q=70" alt="Bathroom remodel">
-        <h4>Bathroom Remodels</h4>
-        <p>Elegant fixtures, waterproofing, and tile work done with precision.</p>
-      </article>
-
-      <article class="service card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=70" alt="Deck and fence">
-        <h4>Decks & Fences</h4>
-        <p>Durable outdoor builds that increase useable space and curb appeal.</p>
-      </article>
-
-      <article class="service card">
-        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=70" alt="Concrete work">
-        <h4>Concrete & Repairs</h4>
-        <p>Foundations, driveways, patching, and finish concrete work with clean results.</p>
-      </article>
+    <section class="why section-dark">
+      <div class="container why-grid">
+        <div class="why-image">
+          <img src="images/why-hands.jpg" alt="craftsman working" class="rounded-img">
+        </div>
+        <div class="why-content">
+          <h2 class="section-title dark">WHY CHOOSE REM</h2>
+          <ul class="features">
+            <li><strong>Expert Craftsmanship</strong><span class="muted"> — Our skilled team delivers exceptional quality and attention to detail.</span></li>
+            <li><strong>Transparent Pricing</strong><span class="muted"> — No hidden fees. We provide detailed estimates and clear communication.</span></li>
+            <li><strong>On-Time Completion</strong><span class="muted"> — We respect your schedule and complete projects on deadline.</span></li>
+            <li><strong>Customer-First Process</strong><span class="muted"> — From consultation to final walk-through, your satisfaction is our priority.</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="cta-strip">
-      <div>
-        <h3>Ready to start your next project?</h3>
-        <a class="btn large" href="contact.html">Get a Free Quote</a>
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <h2>READY TO START YOUR PROJECT?</h2>
+        <p class="muted">Browse our portfolio or get in touch for a free estimate.</p>
+        <a href="contact.html" class="btn-primary">Explore Portfolio</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> REM Renovations and Repairs • All Rights Reserved • Website under construction photos used on this website are placeholders and not a representation of worked preformed. </div>
-      <div><a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></div>
+  <footer class="site-footer section-light">
+    <div class="container footer-grid">
+      <div>
+        <h4>REM Renovations</h4>
+        <p class="muted small">REM Renovations & Repairs is dedicated to transforming homes with high-quality craftsmanship and exceptional service.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted small">remrenovationsandrepairsllc@gmail.com<br>123 Main Street, Durham, NC</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p class="muted small">Kitchens • Bathrooms • Decks • Concrete • Repairs</p>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year"></span> REM Renovations & Repairs • All rights reserved</div>
   </footer>
 
 <script src="script.js"></script>

@@ -1,114 +1,132 @@
-/* Brightened Luxury Black + Blue Theme */
+/* Global / Theme */
 :root{
-  --bg:#15181f; /* brighter than the old #0c0e12 */
-  --panel:#1d2330; /* lighter panels */
-  --blue:#2a7cff; /* brighter accent blue */
-  --muted:#c7d1e0;
-  --accent: linear-gradient(90deg,var(--blue),#57a4ff);
+  --bg:#f6f3ef;        /* light beige page bg like screenshots */
+  --panel:#ffffff;
+  --text:#0b0b0b;
+  --muted:#6e6a66;
+  --blue:#0044cc;      /* user-selected royal blue */
+  --accent:linear-gradient(90deg,var(--blue),#2f7bff);
+  --container:1200px;
   --radius:14px;
-  --max-width:1100px;
-  --container-padding:20px;
-  font-family:"Inter", system-ui, sans-serif;
+  --glass:rgba(0,0,0,0.03);
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: light;
 }
 
+*{box-sizing:border-box}
+html,body{height:100%}
 body{
   margin:0;
   background:var(--bg);
-  color:#f4f7ff;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
   line-height:1.6;
 }
 
-/* NAV */
-.nav{
-  background:rgba(25,28,36,0.85);
-  backdrop-filter:blur(8px);
-  padding:20px 0;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-}
-.logo{color:var(--blue);font-weight:700;letter-spacing:0.6px;font-size:1.1rem}
-
-.nav-links a{
-  color:var(--muted);
-  background:rgba(255,255,255,0.06);
-  padding:8px 12px;
-  border-radius:8px;
-  transition:0.25s;
-}
-.nav-links a:hover{background:rgba(255,255,255,0.12);color:#fff}
-
-/* HERO */
-.hero{
-  padding:60px 0 80px;
-  background:radial-gradient(circle at top right, rgba(42,124,255,0.25), transparent 65%);
-}
-.hero-text h1{text-shadow:0 0 10px rgba(42,124,255,0.35)}
-
-/* BUTTONS */
-.btn{
-  display:inline-block;
-  background:var(--accent);
-  padding:14px 22px;
-  border-radius:10px;
-  font-weight:600;
-  color:#fff;
-  box-shadow:0 4px 18px rgba(42,124,255,0.35);
-  transition:0.2s;
-}
-.btn:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(42,124,255,0.45)}
-
-/* CARDS */
-.card{
-  background:linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
-  border-radius:var(--radius);
-  padding:24px;
-  border:1px solid rgba(255,255,255,0.12);
-  box-shadow:0 6px 18px rgba(0,0,0,0.35);
-  transition:0.25s;
-}
-.card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(42,124,255,0.35)}
-
-/* CTA STRIP */
-.cta-strip{
-  background:linear-gradient(90deg, rgba(42,124,255,0.25), rgba(42,124,255,0.18));
-  padding:28px;
-  border-radius:16px;
-  box-shadow:0 0 28px rgba(42,124,255,0.22);
-  margin-top:32px;
+/* Containers */
+.container{
+  width:100%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 28px;
 }
 
-/* FOOTER */
-.footer{
-  background:rgba(255,255,255,0.05);
-  padding:28px;
-  border-top:1px solid rgba(255,255,255,0.08);
-  color:var(--muted);
-}
-/* Brightened Accent Blocks */
-.accent-block {
-  background: linear-gradient(135deg, #0055ff, #0077ff);
-  box-shadow: 0 6px 20px rgba(0, 119, 255, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
+/* Header / Nav */
+.site-header{background:transparent;border-bottom:1px solid rgba(0,0,0,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-weight:600;font-size:1.05rem}
+.site-nav{display:flex;gap:22px;align-items:center}
+.site-nav .nav-link{color:var(--muted);text-decoration:none;font-style:italic}
+.site-nav .nav-link.active{color:var(--text);font-weight:600}
 
-/* Brightened Sections */
-.section-dark {
-  background: #0d0f18;
-}
+/* Hero */
+.hero-section{padding:72px 0;background:transparent}
+.hero-grid{display:grid;grid-template-columns:1fr 520px;align-items:center;gap:48px}
+.hero-left{}
+.hero-title{font-family: "Montserrat", "Poppins", sans-serif;font-weight:800;font-size:3.6rem;letter-spacing:-1px;margin:0 0 18px}
+.hero-sub{font-family: "Cormorant Garamond", "Georgia", serif;font-style:italic;color:var(--muted);max-width:640px;margin-bottom:22px}
+.btn-outline{display:inline-block;padding:12px 20px;border-radius:8px;border:1px solid var(--text);text-decoration:none;color:var(--text);font-weight:600}
+.hero-img{width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
 
-/* Improved Text Contrast */
-.section-dark h2, .section-dark p {
-  color: #f2f6ff;
-}
+/* Section Titles */
+.section-title{font-family:"Montserrat",sans-serif;font-size:2rem;text-align:center;margin:8px 0 6px}
+.section-lead{text-align:center;font-style:italic;color:var(--muted);margin-bottom:28px}
 
-/* Brighter Buttons */
-.btn-primary {
-  background: #0066ff;
-  border-color: #3388ff;
-  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
-}
+/* Services Preview */
+.section-light{background:transparent;padding:48px 0}
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:22px}
+.card{background:var(--panel);padding:24px;border-radius:12px;border:1px solid rgba(0,0,0,0.04);box-shadow:0 6px 18px rgba(19,19,19,0.04)}
+.card-icon{font-size:20px;margin-bottom:10px}
+.card h3{margin:0 0 8px}
+.card .muted{color:var(--muted);font-size:0.95rem}
 
-/* Subtle Glow for Luxury Effect */
-.glow {
-  text-shadow: 0 0 10px rgba(0, 119, 255, 0.6);
-}
+/* Why / Two-column */
+.section-dark{background:#f1efe9;padding:56px 0}
+.why-grid{display:grid;grid-template-columns:520px 1fr;gap:36px;align-items:center}
+.rounded-img{width:100%;border-radius:12px;display:block;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.why-content .features{list-style:none;padding:0;margin:0}
+.features li{padding:12px 0;border-bottom:1px dashed rgba(0,0,0,0.03)}
+.features strong{display:block}
+.features .muted{color:var(--muted);font-style:italic;font-size:0.95rem}
 
+/* CTA strip */
+.cta-section{padding:48px 0;background:#ffffff;text-align:center}
+.cta-inner h2{font-size:2rem;margin-bottom:8px}
+.btn-primary{display:inline-block;padding:12px 20px;border-radius:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700}
+
+/* Services page layout */
+.page-hero{padding:56px 0}
+.page-title{text-align:center;font-family:"Montserrat",sans-serif;font-size:2.6rem;margin:10px 0}
+.services-list{padding:36px 0}
+.service-row{display:flex;gap:26px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(0,0,0,0.04)}
+.service-row.reverse{flex-direction:row-reverse}
+.service-thumb{width:420px;flex-shrink:0}
+.service-body h3{margin-top:0}
+.service-points{margin-top:10px;padding-left:20px}
+
+/* Gallery */
+.gallery{padding:36px 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-item{overflow:hidden;border-radius:10px}
+.gallery-item img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .25s}
+.gallery-item img:hover{transform:scale(1.03)}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.8);z-index:9999;padding:24px}
+.lightbox img{max-width:95%;max-height:85vh;border-radius:8px}
+.lb-close{position:absolute;right:28px;top:28px;background:transparent;border:0;color:#fff;font-size:24px}
+
+/* Contact */
+.contact{padding:36px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contact-card{padding:20px}
+.contact-form label{display:block;margin-bottom:10px}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)}
+.contact-form button{margin-top:8px}
+
+/* Footer */
+.site-footer{padding:28px 0;margin-top:28px}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;border-top:1px solid rgba(0,0,0,0.04);padding-top:18px}
+.small{font-size:0.92rem}
+
+/* Copyright */
+copyright{display:block;text-align:center;padding:12px 0}
+
+/* Responsive */
+@media (max-width:1100px){
+  .hero-grid{grid-template-columns:1fr 420px}
+  .why-grid{grid-template-columns:1fr}
+}
+@media (max-width:880px){
+  .cards-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .site-nav{display:none}
+}
+@media (max-width:560px){
+  .hero-title{font-size:2.2rem}
+  .hero-grid{grid-template-columns:1fr}
+  .service-thumb{width:100%}
+  .service-row.reverse{flex-direction:column}
+  .contact-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr}
+}

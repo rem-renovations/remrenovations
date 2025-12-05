@@ -7,44 +7,55 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="logo">REM Renovations & Repairs</div>
-      <div id="mobile-menu" class="menu-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">REM Renovations</div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <main class="container main">
-    <header class="page-header">
-      <h1>Project Gallery</h1>
-      <p class="lead">A selection of completed projects. Replace these images by adding your own files to /images and updating the `images` array in <code>script.js</code>.</p>
-    </header>
+  <main>
+    <section class="page-hero section-light">
+      <div class="container">
+        <h1 class="page-title">PROJECT GALLERY</h1>
+        <p class="section-lead">A selection of finished work & transformations. Click to enlarge.</p>
+      </div>
+    </section>
 
-    <section id="gallery" class="gallery-grid">
-      <!-- Images are injected by script.js -->
+    <section class="gallery container">
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- images injected by script.js -->
+      </div>
     </section>
   </main>
 
-  <!-- Lightbox modal -->
   <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button id="lightbox-close" class="lightbox-close" aria-label="Close">✕</button>
-    <img id="lightbox-img" alt="">
-    <div id="lightbox-caption" class="lightbox-caption"></div>
+    <button id="lb-close" class="lb-close">✕</button>
+    <img id="lb-img" alt="">
+    <div id="lb-cap" class="lb-cap muted"></div>
   </div>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year3"></span> REM Renovations and Repairs • All Rights Reserved</div>
-      <div><a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></div>
+  <footer class="site-footer section-light">
+    <div class="container footer-grid">
+      <div>
+        <h4>REM Renovations</h4>
+        <p class="muted small">High-quality renovations and repairs with a focus on customer satisfaction.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted small">remrenovationsandrepairsllc@gmail.com</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p class="muted small">Kitchens • Bathrooms • Decks • Concrete • Repairs</p>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year3"></span> REM Renovations & Repairs • All rights reserved</div>
   </footer>
 
 <script src="script.js"></script>

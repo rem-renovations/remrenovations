@@ -7,64 +7,75 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="logo">REM Renovations & Repairs</div>
-      <div id="mobile-menu" class="menu-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">REM Renovations</div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <main class="container main contact-page">
-    <header class="page-header">
-      <h1>Contact Us</h1>
-      <p class="lead">Get in touch for a free estimate or to discuss your project.</p>
-    </header>
-
-    <section class="contact-grid">
-      <div class="contact-card card">
-        <h3>Reach Out To Us </h3>
-        <p>Email: <a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></p>
-        <p>Phone: 984-319-3744 </p>
-        <p>Serving the local area with high-quality renovations and repairs.</p>
+  <main>
+    <section class="page-hero section-light">
+      <div class="container">
+        <h1 class="page-title">CONTACT US</h1>
+        <p class="section-lead">Get in touch for a free estimate or to discuss your project.</p>
       </div>
+    </section>
 
-      <form class="contact-form card" action="https://formspree.io/f/xblqlwbq" method="POST">
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="_replyto" required>
-        </label>
-        <label>
-          Phone
-          <input type="tel" name="phone">
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <!-- optional: add a hidden field for subject -->
-        <input type="hidden" name="_subject" value="Website Inquiry">
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+    <section class="contact container">
+      <div class="contact-grid">
+        <div class="contact-card card">
+          <h3>Get In Touch</h3>
+          <p class="muted">Email: <a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></p>
+          <p class="muted">Phone: (add phone number)</p>
+          <p class="muted">Address: 123 Main Street, Durham, NC</p>
+        </div>
+
+        <form class="contact-form card" action="https://formspree.io/f/xblqlwbq" method="POST">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="_replyto" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <input type="hidden" name="_subject" value="Website Inquiry">
+          <button class="btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year4"></span> REM Renovations and Repairs • All Rights Reserved</div>
-      <div><a href="mailto:remrenovationsandrepairsllc@gmail.com">remrenovationsandrepairsllc@gmail.com</a></div>
+  <footer class="site-footer section-light">
+    <div class="container footer-grid">
+      <div>
+        <h4>REM Renovations</h4>
+        <p class="muted small">High-quality renovations and repairs with a focus on customer satisfaction.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted small">remrenovationsandrepairsllc@gmail.com</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p class="muted small">Kitchens • Bathrooms • Decks • Concrete • Repairs</p>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year4"></span> REM Renovations & Repairs • All rights reserved</div>
   </footer>
 
 <script src="script.js"></script>

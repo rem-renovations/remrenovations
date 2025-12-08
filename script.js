@@ -9,13 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // gallery images (replace or add filenames in the images/ folder)
   const IMAGES = [
-    'images/gal-1.jpg',
-    'images/gal-2.jpg',
-    'images/gal-3.jpg',
-    'images/gal-4.jpg',
-    'images/gal-5.jpg',
-    'images/gal-6.jpg'
-  ];
+    {
+  image: "images/thumbnail_IMG_0281.png",
+  title: "Bathroom Remodel",
+  video: "images/IMG_0281.mov",
+  disclaimer: `
+    For this bathroom renovation, REM Renovations & Repairs completed the demo, all electrical work,
+    floor tile installation, painting, faucet installation and plumbing connections, toilet installation,
+    installation of two exhaust fans, the sliding barn-door style door, and Schluter® uncoupling membrane
+    for the floor. The shower was not installed by REM Renovations & Repairs. Only assistance was provided
+    for the tub install. My work was completed within 7–8 days; I finished before the other contractor and
+    only assisted to complete the shower and tub.
+  `
+}
+
 
   const galleryGrid = document.getElementById('gallery-grid');
   if(galleryGrid){
